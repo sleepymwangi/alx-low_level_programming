@@ -10,7 +10,7 @@ int main(void)
 	char y;
 	int x;
 
-	for (x = '4'; x < '14'; x++)
+	for (x = 4; x <= 14; x++)
 	{
 		putchar(x);
 	}
