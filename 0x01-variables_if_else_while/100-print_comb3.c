@@ -17,30 +17,30 @@
  */
 int main(void)
 {
-	int x;
-	int n = 0;
+	int n;
+	int x = 10;
 
-	while (n < 10)
+	while (x < 10)
 	{
-		x = 0;
-		while (x < 10)
+		n = 10;
+		while (n < 10)
 		{
 			if (x != n && x < n)
 			{
 				putchar('0' + x);
 				putchar('0' + n);
 
-				if (x + n != 17)
+				if (n + x != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-
-			x++;
+			n++;
 		}
-		n++;
+		x++;
 	}
 	putchar('\n');
 	return (0);
 }
+
