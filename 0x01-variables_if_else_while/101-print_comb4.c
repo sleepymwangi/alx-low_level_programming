@@ -9,28 +9,29 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int i, j, k, l;
 
-	for (a = 0; a < 8; a++)
+	i = 0;
+	while (i < 1000)
 	{
-		for (b = a + 1; b < 9; b++)
+		j = i / 100;
+		k = (i / 10) % 10;
+		l = i % 100;
+		if (j < k && k < l)
 		{
-			for (c = b + 1; c < 10; c++)
+			putchar(l + '0');
+			putchar(k + '0');
+			putchar(j + '0');
+			if (i < 789)
 			{
-				if (a != b && a != c && b != c)
-				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(c + '0');
-					if (a + b + c < 24)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
+		i++;
 	}
 	putchar('\n');
+
 	return (0);
 }
+
