@@ -18,24 +18,28 @@
 int main(void)
 {
 	int x;
-	int n;
+	int n = 0;
 
-	for (x = 1; x <= 11; x++)
+	while (n < 10)
 	{
-		for (n = 0; n <= 10; n++)
+		x = 0;
+		while (x < 10)
 		{
-			if (n < x)
+			if (x != n && x < n)
 			{
-				putchar('0' + n);
 				putchar('0' + x);
-				if (x != 10 || n != 9) 
+				putchar('0' + n);
 
+				if (x + n != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
+			x++;
 		}
+		n++;
 	}
 	putchar('\n');
 	return (0);
