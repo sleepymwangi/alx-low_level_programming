@@ -5,7 +5,6 @@
  * main - Entry
  * Description: Numbers must be separated by ,followed by space
  * The two digits must be different
- * 01 and 10 are considered the same combination of the two digits 0 and 1
  * Print only the smallest combination of two digits
  * Numbers should be printed in ascending order, with two digits
  * You can only use the putchar function
@@ -27,8 +26,8 @@ int main(void)
 		{
 			if (x != n && x < n)
 			{
-				putchar('0' + x);
-				putchar('0' + n);
+				putchar(x + '0');
+				putchar(n + '0');
 
 				if (n + x != 17)
 				{
