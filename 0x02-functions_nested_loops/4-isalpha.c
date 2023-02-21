@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * _isalpha - print lowercase or uppercase
