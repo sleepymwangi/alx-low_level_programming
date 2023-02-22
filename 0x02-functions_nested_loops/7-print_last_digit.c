@@ -9,18 +9,16 @@
 int print_last_digit(int c)
 {
 	int x;
-	
-	if ( c < 0)
-	{
-		c = -c;
-		x = c % 10;
-	}
-	if (x < 0)
-	{
-		x = -x;
-		_putchar('0' + x);
-	}
-	return (x);
 
-	
+	for (c = 0; c <= 98; c++)
+	{
+		x = c % 10;
+
+		for (x = 0; x = 98; x++)
+		{
+			_putchar('0' + x);
+		}
+	}
+	_putchar('\n');
+	return (0);
 }
