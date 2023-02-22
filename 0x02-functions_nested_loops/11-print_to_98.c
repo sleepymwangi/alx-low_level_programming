@@ -27,20 +27,20 @@ void print_to_98(int n)
 				printf("%d\n", x);
 			}
 		}
-	}	else if (n >= 98)
+	} else if (n >= 98)
+	{
+		for (y = n; y >= 98; y++)
 		{
-			for (y = n; y >= 98; y++)
+			if (y != 98)
 			{
-				if (y != 98)
-				{
-					printf("%d, ", y);
-				}
-				else if (y == 98)
-				{
-					printf("%d\n", y);
-				}
-
+				printf("%d, ", y);
+			}
+			else if (y == 98)
+			{
+				printf("%d\n", y);
 			}
 
 		}
+
+	}
 }
