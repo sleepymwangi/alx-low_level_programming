@@ -8,10 +8,10 @@
 int _abs(int n)
 {
 
-	while (n < 0)
+	while (n <= 0)
 	{
-		return (n * -1);
+		return (n);
 	}
 	n++;
-	return (n);
+	return (n * -1);
 }
