@@ -13,11 +13,7 @@ int print_last_digit(int c)
 	for (c = 0; c <= 98; c++)
 	{
 		x = c % 10;
-
-		for (x = 0; x <= 98; x++)
-		{
-			_putchar('0' + x);
-		}
+		_putchar('0' + x);
 	}
 	_putchar('\n');
 	return (0);
