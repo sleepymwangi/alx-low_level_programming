@@ -5,13 +5,12 @@
  * @n: integer
  * Return: 0 succession
  */
-int _abs(int n)
+int _abs(int x)
 {
 
-	while (n <= 0)
+	if (x >= 0)
 	{
 		return (n);
 	}
-	n++;
 	return (n * -1);
 }
