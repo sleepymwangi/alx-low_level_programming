@@ -2,7 +2,7 @@
 
 /**
  * _abs - functionthat computes the absolute value
- * @n: integer
+ * @x: integer
  * Return: 0 succession
  */
 int _abs(int x)
@@ -10,7 +10,7 @@ int _abs(int x)
 
 	if (x >= 0)
 	{
-		return (n);
+		return (x);
 	}
-	return (n * -1);
+	return (x * -1);
 }
