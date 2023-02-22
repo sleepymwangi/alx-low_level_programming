@@ -2,19 +2,20 @@
 
 /**
  * print_last_digit - function that prints last digit
- * @c: the integer to remove the last digit
+ * @n: the integer to remove the last digit
  * @x - digit
  * Return: the value of the last digit
  */
-int print_last_digit(int c)
+int print_last_digit(int n)
 {
-	int x;
+	n = -n;
 
-	for (c = 0; c <= 98; c++)
+	if (n == -n)
 	{
-		x = c % 10;
-		_putchar('0' + x);
+		int x = -n;
+
+		x = n % 10;
+		_putchar(x + '0');
 	}
-	_putchar('\n');
 	return (0);
 }
