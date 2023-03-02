@@ -1,29 +1,24 @@
 #include "main.h"
 
 /**
- * print_number - prints integers enters as parameters using putchar
- * @n: integer to print
- * Return: void
+ * print_number - prints an integer;
+ * @n: integer to be printed;
  */
 void print_number(int n)
 {
-	int power;
+	unsigned int n1;
 
-	power = base10(8);
 	if (n < 0)
 	{
+		n1 = -n;
 		_putchar('-');
-		n *= -1;
-	}
-	if (n == 0)
-	_putchar('0');
-	else
+	} else
 	{
-		for (; power >= 1; power /= 10)
-		{
-			_putchar((n / power) + '0');
-			n %= power;
-		}
+		n1 = n;
 	}
-}
 
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
+}
