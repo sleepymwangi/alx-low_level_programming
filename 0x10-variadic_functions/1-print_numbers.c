@@ -8,7 +8,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	va_list is;
 
 	va_start(is, n);
