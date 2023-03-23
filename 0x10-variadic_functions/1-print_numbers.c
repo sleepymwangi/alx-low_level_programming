@@ -13,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(is, n);
 	if (separator == NULL)
-		separator = '\0';
+		separator = "";
 
 	i = 0;
 	while (i < n)
@@ -23,5 +23,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		i++;
 	}
+	printf("\n");
 	va_end(is);
 }
